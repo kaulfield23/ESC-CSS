@@ -1,0 +1,38 @@
+$breakpoint-width: 600px;
+$shrink-breakpoint-width:1000px;
+@import "./mixin.scss";
+
+* {
+  margin: 0;
+  font-family: "Inter";
+  padding: 0;
+  color: #293845;
+}
+.ya {
+  font-size: 40px;
+  border: 2px solid black;
+  height: 300px;
+}
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+.container {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+}
+@import "./div-scss-containers/navBar.scss";
+@import "./div-scss-containers/headImg.scss";
+@import "./div-scss-containers/testimonial.scss";
+@import './div-scss-containers/two-btns.scss';
+@import './div-scss-containers/full-story.scss';
+.div6 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.footer{
+    font-size:50px;
+}

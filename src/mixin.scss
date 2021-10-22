@@ -1,0 +1,61 @@
+@mixin img-style {
+  background-color: #dfe6ed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  @media screen and (max-width: 500px) {
+    height: 250px;
+  }
+}
+@mixin btn-style {
+  background-color: #6558f5;
+  padding: 20px;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@mixin icon-style {
+  color: #fff;
+  margin: 0 6px;
+}
+
+@mixin white-btn-style {
+  color: #6558f5;
+  border: none;
+  background-color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #c7c3fb;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+  padding: 3px;
+  margin-top: 10px;
+  width: 250px;
+  border-radius: 0;
+  font-size: 18px;
+  margin: 10px auto;
+  font-weight: bold;
+  i {
+    color: #6558f5;
+    margin-right: 5px;
+  }
+}
+
+@mixin white-btn-style-2 {
+  i {
+    color: #6558f5;
+  }
+  background-color: #fff;
+  color: #6558f5;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border-color: #c7c3fb;
+  border-style: solid;
+  font-weight: bold;
+}

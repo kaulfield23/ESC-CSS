@@ -1,0 +1,14 @@
+.two-btns {
+  text-align: center;
+  .btn-in-two-btns {
+    @include white-btn-style-2;
+    margin: 70px 10px 150px 10px;
+  }
+  @media screen and (max-width: $breakpoint-width) {
+    display: flex;
+    flex-direction: column;
+    .btn-in-two-btns {
+      @include white-btn-style;
+    }
+  }
+}

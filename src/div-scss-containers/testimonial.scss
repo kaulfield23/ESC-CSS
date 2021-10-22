@@ -1,0 +1,57 @@
+.testimonial {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  @media screen and (max-width: $breakpoint-width) {
+    margin: 100px auto;
+    margin-bottom: 0;
+  }
+  .firstQuote {
+    grid-column: span 1;
+  }
+  .secondQuote {
+    grid-column: span 1;
+    display: flex;
+  }
+  .quotes {
+    display: flex;
+    font-size: 25px;
+    margin-top: 100px;
+    padding-right: 20px;
+    @media screen and (max-width: 1000px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: $breakpoint-width) {
+      margin-bottom: 50px;
+      width: 90%;
+      font-size: 15px;
+      margin: 30px auto;
+    }
+    .quote-img {
+      margin: 0 40px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      @media screen and (max-width: $breakpoint-width and 750px) {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 0px 10px 0 10px;
+      }
+    }
+    p {
+      font-style: italic;
+    }
+    .quote-label {
+      text-indent: 10px;
+      font-size: 20px;
+      @media screen and (max-width: $breakpoint-width) {
+        font-size: 12px;
+      }
+    }
+  }
+  .secondQuote {
+    @media screen and (max-width: $breakpoint-width) {
+      display: none;
+    }
+  }
+}

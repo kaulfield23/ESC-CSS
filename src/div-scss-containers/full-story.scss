@@ -1,0 +1,29 @@
+.full-story {
+  text-align: center;
+  margin-bottom: 150px;
+  @media screen and (max-width: $breakpoint-width) {
+    font-size: 20px;
+    text-align: center;
+    margin: 55px 10px 70px 10px;
+  }
+  .full-story-desc {
+    margin: 0 auto;
+    width: 600px;
+    font-size: 20px;
+    font-weight: bold;
+    @media screen and (max-width: 700px) {
+      width: 300px;
+    }
+  }
+  #btn-in-full-story {
+    background-color: #fff;
+    color: #6558f5;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-color: #c7c3fb;
+    border-style: solid;
+    font-weight: bold;
+  }
+}
