@@ -17,11 +17,11 @@
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
-  i{
-    color:#fff;
+  i {
+    color: #fff;
   }
-  @media screen and (max-width:300) {
-    width:50%;
+  @media screen and (max-width: 300) {
+    width: 50%;
   }
 }
 
@@ -37,12 +37,11 @@
   text-decoration: underline;
   text-decoration-color: #c7c3fb;
   text-decoration-thickness: 3px;
-  text-underline-offset: 4px;
+  text-underline-offset: 6px;
   padding: 3px;
   margin-top: 10px;
-  width: 250px;
-  @media screen and (max-width:300) {
-    width:50%;
+  @media screen and (max-width: 300) {
+    width: 50%;
   }
   border-radius: 0;
   font-size: 18px;
@@ -67,4 +66,15 @@
   border-color: #c7c3fb;
   border-style: solid;
   font-weight: bold;
+}
+
+@mixin footer-flex {
+  @media screen and(max-width:$breakpoint-width) {
+    display: flex;
+    flex-direction: column;
+    a {
+      text-decoration: none;
+      color: #293845;
+    }
+  }
 }
