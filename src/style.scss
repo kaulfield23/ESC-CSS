@@ -1,5 +1,5 @@
 $breakpoint-width: 600px;
-$shrink-breakpoint-width:1000px;
+$shrink-breakpoint-width: 1000px;
 @import "./mixin.scss";
 
 * {
@@ -8,10 +8,18 @@ $shrink-breakpoint-width:1000px;
   padding: 0;
   color: #293845;
 }
+html {
+  width: 100vw;
+}
 .ya {
   font-size: 40px;
   border: 2px solid black;
   height: 300px;
+}
+body {
+  @media screen and(max-width: 280px) {
+    width: 280px;
+  }
 }
 body {
   height: 100vh;
@@ -25,14 +33,93 @@ body {
 @import "./div-scss-containers/navBar.scss";
 @import "./div-scss-containers/headImg.scss";
 @import "./div-scss-containers/testimonial.scss";
-@import './div-scss-containers/two-btns.scss';
-@import './div-scss-containers/full-story.scss';
-.div6 {
+@import "./div-scss-containers/two-btns.scss";
+@import "./div-scss-containers/full-story.scss";
+
+.four-boxes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  .imgs-in-four-boxes img{
+    width:100%;
+  }
+  @media screen and(max-width:$breakpoint-width and $shrink-breakpoint-width) {
+    display: flex;
+    flex-direction: column;
+  }
+  .imgs-in-four-boxes img{
+      width: 100%;
+      height:100%;
+  }
+  .textBox-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px;
+    @media screen and(max-width:$breakpoint-width) {
+      padding:40px 0;
+    }
+    .texts-in-four-boxes {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      font-size:17px;
+      @media screen and(max-width:$breakpoint-width) {
+        font-size:14px;
+      }
+      .text-title-in-four-boxes {
+        font-size: 25px;
+        font-weight: bold;
+        @media screen and(max-width:$breakpoint-width) {
+          font-size:18px;
+        }
+      }
+    }
+  }
+  .btns-in-four-boxes{
+    @include btn-style;
+    font-size:18px;
+    padding:8px 23px;
+  }
+  .firstBtn-in-four-boxes{
+    width:250px;
+    margin-top:30px;
+    @media screen and(max-width:$breakpoint-width) {
+      font-size:15px;
+      padding:5px 10px;
+      width:100px;
+  
+    }
+  }
+  .secondBtn-in-four-boxes{
+    margin:30px 15px;
+    @media screen and(max-width:$breakpoint-width) {
+      margin:0;
+      margin-top:30px;
+      font-size:15px;
+
+      #play-online-btn{
+        @include white-btn-style-2;
+      }
+    }
+  }
+  .play-online-btn{
+    @media screen and(max-width:$breakpoint-width) {
+      @include white-btn-style;
+      text-align: start;
+      margin:0;
+    }
+  }
+  .btns-flex-in-four-boxes{
+    @media screen and(max-width:$breakpoint-width) {
+      display: flex;
+      flex-direction: column-reverse;
+      margin:0;
+    }
+  }
+  
 }
 
-.footer{
-    font-size:50px;
+.footer {
+  font-size: 20px;
 }

@@ -5,10 +5,20 @@
   color: #293845;
 }
 
+html {
+  width: 100vw;
+}
+
 .ya {
   font-size: 40px;
   border: 2px solid black;
   height: 300px;
+}
+
+@media screen and (max-width: 280px) {
+  body {
+    width: 280px;
+  }
 }
 
 body {
@@ -177,6 +187,14 @@ body {
 }
 .headImg .secondBtn-headImg i {
   color: #fff;
+}
+@media screen and (max-width: 300) {
+  .headImg .secondBtn-headImg {
+    width: 50%;
+  }
+}
+.headImg .secondBtn-headImg i {
+  color: #fff;
   margin: 0 6px;
 }
 @media screen and (max-width: 600px) {
@@ -199,6 +217,14 @@ body {
 .headImg .firstBtn-headImg i {
   color: #fff;
   margin: 0 6px;
+}
+.headImg .firstBtn-headImg i {
+  color: #fff;
+}
+@media screen and (max-width: 300) {
+  .headImg .firstBtn-headImg {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 600px) {
   .headImg .firstBtn-headImg {
@@ -324,6 +350,13 @@ body {
     margin: 10px auto;
     font-weight: bold;
   }
+}
+@media screen and (max-width: 600px) and (max-width: 300) {
+  .two-btns .btn-in-two-btns {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
   .two-btns .btn-in-two-btns i {
     color: #6558f5;
     margin-right: 5px;
@@ -349,7 +382,7 @@ body {
 }
 @media screen and (max-width: 700px) {
   .full-story .full-story-desc {
-    width: 300px;
+    width: 90%;
   }
 }
 .full-story #btn-in-full-story {
@@ -364,14 +397,150 @@ body {
   font-weight: bold;
 }
 
-.div6 {
+.four-boxes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
+.four-boxes .imgs-in-four-boxes img {
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .four-boxes {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.four-boxes .imgs-in-four-boxes img {
+  width: 100%;
+  height: 100%;
+}
+.four-boxes .textBox-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+@media screen and (max-width: 600px) {
+  .four-boxes .textBox-flex {
+    padding: 40px 0;
+  }
+}
+.four-boxes .textBox-flex .texts-in-four-boxes {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  font-size: 17px;
+}
+@media screen and (max-width: 600px) {
+  .four-boxes .textBox-flex .texts-in-four-boxes {
+    font-size: 14px;
+  }
+}
+.four-boxes .textBox-flex .texts-in-four-boxes .text-title-in-four-boxes {
+  font-size: 25px;
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  .four-boxes .textBox-flex .texts-in-four-boxes .text-title-in-four-boxes {
+    font-size: 18px;
+  }
+}
+.four-boxes .btns-in-four-boxes {
+  background-color: #6558f5;
+  padding: 20px;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px 23px;
+}
+.four-boxes .btns-in-four-boxes i {
+  color: #fff;
+}
+@media screen and (max-width: 300) {
+  .four-boxes .btns-in-four-boxes {
+    width: 50%;
+  }
+}
+.four-boxes .firstBtn-in-four-boxes {
+  width: 250px;
+  margin-top: 30px;
+}
+@media screen and (max-width: 600px) {
+  .four-boxes .firstBtn-in-four-boxes {
+    font-size: 15px;
+    padding: 5px 10px;
+    width: 100px;
+  }
+}
+.four-boxes .secondBtn-in-four-boxes {
+  margin: 30px 15px;
+}
+@media screen and (max-width: 600px) {
+  .four-boxes .secondBtn-in-four-boxes {
+    margin: 0;
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  .four-boxes .secondBtn-in-four-boxes #play-online-btn {
+    background-color: #fff;
+    color: #6558f5;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-color: #c7c3fb;
+    border-style: solid;
+    font-weight: bold;
+  }
+  .four-boxes .secondBtn-in-four-boxes #play-online-btn i {
+    color: #6558f5;
+  }
+}
+@media screen and (max-width: 600px) {
+  .four-boxes .play-online-btn {
+    color: #6558f5;
+    border: none;
+    background-color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #c7c3fb;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+    padding: 3px;
+    margin-top: 10px;
+    width: 250px;
+    border-radius: 0;
+    font-size: 18px;
+    margin: 10px auto;
+    font-weight: bold;
+    text-align: start;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 600px) and (max-width: 300) {
+  .four-boxes .play-online-btn {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .four-boxes .play-online-btn i {
+    color: #6558f5;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .four-boxes .btns-flex-in-four-boxes {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+}
 
 .footer {
-  font-size: 50px;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
