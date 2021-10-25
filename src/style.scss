@@ -31,6 +31,18 @@ body {
 @import "./div-scss-containers/navBar.scss";
 @import "./div-scss-containers/headImg.scss";
 @import "./div-scss-containers/testimonial.scss";
+
+.main-carousel {
+  .carousel-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8c8;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+}
+
 @import "./div-scss-containers/two-btns.scss";
 @import "./div-scss-containers/full-story.scss";
 @import "./div-scss-containers/four-boxes.scss";

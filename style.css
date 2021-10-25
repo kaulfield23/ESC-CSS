@@ -325,6 +325,15 @@ body {
   }
 }
 
+.main-carousel .carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8c8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
 .two-btns {
   text-align: center;
 }
@@ -425,8 +434,11 @@ body {
 
 .four-boxes {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   margin-bottom: 100px;
+}
+.four-boxes .two-divs-style {
+  display: flex;
 }
 .four-boxes .imgs-in-four-boxes img {
   width: 100%;
@@ -438,7 +450,7 @@ body {
     height: 250px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
   .four-boxes {
     display: flex;
     flex-direction: column;
@@ -446,13 +458,19 @@ body {
 }
 .four-boxes .first-div {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 600px) {
+  .four-boxes .first-div {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .four-boxes .second-div {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
   .four-boxes .second-div {
     display: flex;
     flex-direction: column-reverse;
