@@ -24,9 +24,11 @@
       }
     }
     .navBar-menu {
+      display:grid;
+      grid-template-columns: repeat(4,1fr);
       .menu-name {
         font-weight: 400;
-        margin: auto 7vw;
+        margin:auto 50px;
         font-size: 25px;
         color: #293845;
         padding: 5px;

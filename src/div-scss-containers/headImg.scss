@@ -36,6 +36,9 @@
         padding: 12px 1.2em;
         font-size: 18px;
         margin:0;
+        a{
+          color:#fff;
+        }
       }
     }
     .firstBtn-headImg {
@@ -48,9 +51,11 @@
         i {
           display: none;
         }
+        a{
+          color: #6558f5;
+        }
         background-color: #fff;
         border: none;
-        color: #6558f5;
         border-bottom: 2px solid #c3bfe8;
         padding: 3px;
         margin:10px 0 0 0;

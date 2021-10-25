@@ -8,9 +8,11 @@ $shrink-breakpoint-width: 1000px;
   padding: 0;
   color: #293845;
   user-select: none;
+  line-height: 1.5em;
 }
 html {
   width: 100vw;
+  overflow-x: hidden;
 }
 .ya {
   font-size: 40px;
@@ -32,43 +34,4 @@ body {
 @import "./div-scss-containers/two-btns.scss";
 @import "./div-scss-containers/full-story.scss";
 @import "./div-scss-containers/four-boxes.scss";
-
-.footer {
-  background-color: powderblue;
-  .footer-left {
-    @media screen and(max-width:$breakpoint-width) {
-      width: 65%;
-      margin: 50px auto;
-    }
-    #footer-left-title {
-      @media screen and(max-width:$breakpoint-width) {
-        font-weight: bold;
-      }
-    }
-  }
-  .footer-middle {
-    @media screen and(max-width:$breakpoint-width) {
-      display: flex;
-      justify-content: center;
-    }
-    .footer-middle-container {
-      padding: 7%;
-      .footer-middle-title {
-        font-weight: bold;
-      }
-      .footer-middle-menu {
-        @include footer-flex;
-      }
-      .footer-middle-sns {
-        @include footer-flex;
-      }
-    }
-  }
-  .footer-right {
-    @include footer-flex;
-    @media screen and(max-width:$breakpoint-width) {
-      font-weight: bold;
-      padding: 0 17%;
-    }
-  }
-}
+@import "./div-scss-containers/footer.scss";
