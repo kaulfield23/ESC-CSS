@@ -1,0 +1,77 @@
+.cards-with-carousel {
+    margin: 180px auto;
+    @media screen and (max-width: $breakpoint-width) {
+      margin: 40px auto;
+    }
+    .popular {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 500;
+      margin-bottom: 80px;
+      @media screen and (max-width: $breakpoint-width) {
+        font-size: 23px;
+        padding: 10px;
+        margin: 30px auto;
+      }
+    }
+    .carousel-cell {
+      margin-right: 10px;
+      border-radius: 5px;
+      counter-increment: carousel-cell;
+      .card {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        width: 363px;
+        height: 446px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        @media screen and (max-width: $breakpoint-width) {
+          width: 300px;
+        }
+        .card-container {
+          padding: 10px;
+          position: relative;
+          .card-title {
+            font-size: 28px;
+            font-weight: 500;
+          }
+          .stars {
+            i {
+              color: #e3170a;
+              letter-spacing: 5px;
+            }
+            display: flex;
+            justify-content: space-between;
+          }
+          .card-little-text {
+            font-size: 14px;
+          }
+          .card-body {
+            margin-top: 20px;
+            line-height: 1.2em;
+          }
+          .card-btn {
+            @include btn-style;
+            text-decoration: none;
+            padding: 10px 30px;
+            position: absolute;
+            right: 13px;
+            top: 110%;
+            @media screen and (max-width: $breakpoint-width) {
+              top: 100%;
+            }
+          }
+        }
+        img {
+          width: 363px;
+          height: 219px;
+          @media screen and (max-width: $breakpoint-width) {
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+  .flex-me {
+    display: flex;
+    justify-content: space-around;
+  }

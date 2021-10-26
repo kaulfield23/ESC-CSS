@@ -14,13 +14,8 @@ window.onload = () => {
 window.addEventListener("resize", initiateFlickity);
 
 function initiateFlickity() {
-  console.log("resizing");
   const mainCarousel = document.querySelector(".main-carousel");
-
-  if (
-    (sizeIsLessThan500px() && flickity === undefined) ||
-    (sizeIsLessThan500px() && mainCarousel.classList[1] == "flex-me")
-  ) {
+  if (sizeIsLessThan500px() && flickity === undefined) {
     console.info("created");
     mainCarousel.classList.remove("flex-me");
     flickity = new Flickity(".main-carousel", {
@@ -30,10 +25,11 @@ function initiateFlickity() {
   } else if (!sizeIsLessThan500px()) {
     mainCarousel.classList.add("flex-me");
     flickity?.destroy();
+    flickity = undefined;
   }
 }
 
 function sizeIsLessThan500px() {
   const horizontalWidth = window.innerWidth;
-  return horizontalWidth < 500;
+  return horizontalWidth < 1130;
 }

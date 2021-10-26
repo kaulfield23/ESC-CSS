@@ -10,16 +10,12 @@
   }
 }
 @mixin btn-style {
-  background-color: #6558f5;
-  padding: 20px;
+  background-color: #E3170A;
   border: none;
   color: #fff;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
-  i {
-    color: #fff;
-  }
   a{
     text-decoration: none;
     color:#fff;
@@ -29,22 +25,18 @@
     width: 50%;
   }
 }
-
-@mixin icon-style {
-  color: #fff;
-  margin: 0 6px;
-}
-
 @mixin white-btn-style {
   color: #6558f5;
   border: none;
   background-color: #fff;
   text-decoration: underline;
-  text-decoration-color: #c7c3fb;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 6px;
+  text-decoration-color:#83aac2;
   padding: 3px;
-  margin-top: 10px;
+  margin:10px 0 0 0;
+  width: 180px;
+  border-radius: 0;
+  font-size: 18px;
+  
   @media screen and (max-width: 300) {
     width: 50%;
   }
@@ -52,20 +44,18 @@
   font-size: 18px;
   margin: 10px auto;
   font-weight: bold;
-  i {
-    color: #6558f5;
-    margin-right: 5px;
-  }
   a{
     text-decoration: none;
-    color: #6558f5;
+    color:#36769D;
+    font-weight:500;
+    font-size:16px;
+    
   }
+  
+  
 }
 
 @mixin white-btn-style-2 {
-  i {
-    color: #6558f5;
-  }
   a{
     text-decoration: none;
     color: #6558f5;
@@ -87,6 +77,18 @@
     a {
       text-decoration: none;
       color: #293845;
+    }
+  }
+}
+
+@mixin red-to-blue{
+  background-color: #8ACFE5;
+  @media screen and (max-width: $breakpoint-width) {
+    padding: 12px 1em;
+    font-size: 18px;
+    margin:0;
+    a{
+      color:#011827;
     }
   }
 }

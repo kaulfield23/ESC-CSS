@@ -4,7 +4,7 @@ $shrink-breakpoint-width: 1000px;
 
 * {
   margin: 0;
-  font-family: "Inter";
+  font-family: "Roboto";
   padding: 0;
   color: #293845;
   user-select: none;
@@ -31,33 +31,7 @@ body {
 @import "./div-scss-containers/navBar.scss";
 @import "./div-scss-containers/headImg.scss";
 @import "./div-scss-containers/testimonial.scss";
-
-.main-carousel {
-  and.flex-me {
-    display: flex;
-  }
-  @media screen and (max-width:$breakpoint-width) {
-  }
-  .carousel-cell {
-    width: 100%;
-    height: 400px;
-    margin-right: 10px;
-    background: powderblue;
-    border-radius: 5px;
-    counter-increment: carousel-cell;
-    .card{
-      box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
-      width:363pxpx;
-      height:446px;
-      border-radius: 8px;
-      img{
-        width:363px;
-        height:219px;
-      }
-    }
-  }
-}
-
+@import './div-scss-containers/card.scss';
 @import "./div-scss-containers/two-btns.scss";
 @import "./div-scss-containers/full-story.scss";
 @import "./div-scss-containers/four-boxes.scss";

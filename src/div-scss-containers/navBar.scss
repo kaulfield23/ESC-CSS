@@ -2,48 +2,64 @@
     padding: 15px;
     display: flex;
     flex-direction: column;
+    background-color: #011827;
     a {
       text-decoration: none;
       margin-right: 8px;
     }
     .navBar-logo {
-      #esc {
-        color: #293845;
-      }
-      font-weight: 600;
-      font-size: 40px;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
+      @media screen and(max-width:$breakpoint-width and 1000px) {
+        display:flex;
+        align-items: center;
+
+      }
       .logo-icon {
-        color: #b987e1;
-        font-size: 80px;
-        margin-right: 18px;
+       width:128px;
+       height:82px;
+       margin-right:20px;
         @media screen and(max-width:$breakpoint-width and 1000px) {
+          margin-right:5px;
           font-size:50px;
+          display:flex;
+          align-items:flex-end;
         }
+      }
+    }
+    .navBar-logo-text{
+      @media screen and(max-width:$breakpoint-width and 1000px) {
+        width:80px;
+        margin-left:10px;
+      }
+    }
+    .navBar-logo-text a{
+      color:#fff;
+      font-size:40px;
+      font-weight:bold;
+      @media screen and(max-width:$breakpoint-width and 1000px) {
+        font-size:20px;
       }
     }
     .navBar-menu {
       display:grid;
       grid-template-columns: repeat(4,1fr);
       .menu-name {
-        font-weight: 400;
+        font-weight:bold;
         margin:auto 50px;
         font-size: 25px;
-        color: #293845;
         padding: 5px;
+        color:#fff;
       }
       padding: 20px;
       margin: 20px auto;
       a:hover {
-        background-color: #c1a2da;
-        border-radius: 4px;
-        padding: 5px;
+        color:rgb(147,207,230);
       }
     }
     .hamburger {
       i {
-        color: #4b5c6b;
+        color:#011827;
       }
       position: absolute;
       font-size: 2em;
@@ -51,21 +67,10 @@
       display: none;
     }
     @media screen and (max-width: 1000px) {
-      padding: 20px;
       .navBar-logo {
         font-size: 12px;
         line-height: 2em;
         font-weight: lighter;
-        #esc {
-          color: #293845;
-          font-size: 1.5em;
-          font-weight: bold;
-          display: flex;
-        }
-        .logo {
-          margin-right: 20px;
-          font-size: 3.3em;
-        }
       }
       .navBar-menu {
         display: none;

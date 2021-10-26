@@ -3,12 +3,19 @@
     grid-template-columns: repeat(4,auto);
     grid-column: 1/4;
     position: relative;
+    background:url(/imgs/image\ 2.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
     @include img-style;
     @media screen and (max-width: $breakpoint-width) {
-      height:200px;
+      background:url(/imgs/image\ 3\(1\).png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+      height:274px;
     }
     #firstImg {
-      width: 120px;
       @media screen and (max-width: $breakpoint-width) {
         width: 65px;
       }
@@ -20,43 +27,38 @@
       top: 93%;
       font-size: 20px;
       @media screen and (max-width: $breakpoint-width) {
-          top: 90%;
+          top: 115%;
           display: flex;
           flex-direction: column-reverse;
           align-items: center;
         }
     }
     .secondBtn-headImg {
-      margin-left:20px;
       @include btn-style;
-      i {
-        @include icon-style;
-      }
-      @media screen and (max-width: $breakpoint-width) {
-        padding: 12px 1.2em;
-        font-size: 18px;
-        margin:0;
-        a{
-          color:#fff;
-        }
-      }
+      padding: 18px 35px;
+      a{
+        color:#011827;
+      font-size:24px;
+    }
+      @include red-to-blue;
     }
     .firstBtn-headImg {
         margin-right:20px;
-      i {
-        @include icon-style;
-      }
-      @include btn-style;
-      @media screen and (max-width: $breakpoint-width) {
-        i {
-          display: none;
-        }
+        @include btn-style;
+        padding: 18px 35px;
         a{
-          color: #6558f5;
+        font-size:24px;
+      }
+      @media screen and (max-width: $breakpoint-width) {
+        a{
+          font-size:16px;
+          color:#36769D;
+          font-weight:500;
         }
         background-color: #fff;
         border: none;
-        border-bottom: 2px solid #c3bfe8;
+        text-decoration: underline;
+        text-decoration-color:#83aac2;
         padding: 3px;
         margin:10px 0 0 0;
         width: 180px;
