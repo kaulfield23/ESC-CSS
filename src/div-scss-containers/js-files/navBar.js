@@ -10,17 +10,26 @@ let flickity;
 window.onload = () => {
   initiateFlickity();
 };
-let windowWidth = window.innerWidth;
-if (windowWidth > 500) {
-  window.addEventListener("resize", initiateFlickity);
-}
+
+window.addEventListener("resize", initiateFlickity);
 
 function initiateFlickity() {
-  if (sizeIsLessThan500px()) {
+  console.log("resizing");
+  const mainCarousel = document.querySelector(".main-carousel");
+
+  if (
+    (sizeIsLessThan500px() && flickity === undefined) ||
+    (sizeIsLessThan500px() && mainCarousel.classList[1] == "flex-me")
+  ) {
+    console.info("created");
+    mainCarousel.classList.remove("flex-me");
     flickity = new Flickity(".main-carousel", {
       prevNextButtons: false,
       pageDots: false,
     });
+  } else if (!sizeIsLessThan500px()) {
+    mainCarousel.classList.add("flex-me");
+    flickity?.destroy();
   }
 }
 
