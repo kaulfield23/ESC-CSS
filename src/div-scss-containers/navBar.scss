@@ -1,98 +1,88 @@
 .navBar {
-    padding: 15px;
+  padding: 15px;
+  @include change-direction-to-column;
+  background-color: #011827;
+  a {
+    text-decoration: none;
+  }
+  @media screen and (max-width: 1000px) {
+    .navBar-menu.active {
+      @include change-direction-to-column;
+    }
+  }
+  .navBar-logo {
     display: flex;
-    flex-direction: column;
-    background-color: #011827;
-    a {
-      text-decoration: none;
-      margin-right: 8px;
-    }
-    .navBar-logo {
+    align-items: flex-end;
+    @media screen and(max-width:$breakpoint-width and 1000px) {
       display: flex;
-      align-items: flex-end;
+      align-items: center;
+    }
+    .logo-icon {
+      width: 128px;
+      height: 82px;
+      margin-right: 20px;
       @media screen and(max-width:$breakpoint-width and 1000px) {
-        display:flex;
-        align-items: center;
-      }
-      .logo-icon {
-       width:128px;
-       height:82px;
-       margin-right:20px;
-        @media screen and(max-width:$breakpoint-width and 1000px) {
-          margin-right:5px;
-          font-size:50px;
-          display:flex;
-          align-items:flex-end;
-        }
-      }
-    }
-    .navBar-logo-text{
-      @media screen and(max-width:$breakpoint-width and 1000px) {
-        width:80px;
-        margin-left:10px;
-      }
-    }
-    .navBar-logo-text a{
-      color:#fff;
-      font-size:40px;
-      font-weight:bold;
-      @media screen and(max-width:$breakpoint-width and 1000px) {
-        font-size:20px;
-      }
-    }
-    .navBar-menu {
-      display:grid;
-      grid-template-columns: repeat(4,1fr);
-      .menu-name {
-        font-weight:bold;
-        margin:auto 50px;
-        font-size: 25px;
-        @media screen and(max-width:$breakpoint-width and 1060px) {
-          font-size:22px;
-        }
-        padding: 5px;
-        color:#fff;
-      }
-      padding: 20px;
-      margin: 20px auto;
-      a:hover {
-        color:rgb(147,207,230);
-      }
-    }
-    .hamburger {
-      i {
-        color:#011827;
-      }
-      position: absolute;
-      font-size: 2em;
-      right: 20px;
-      display: none;
-    }
-    @media screen and (max-width: 1000px) {
-      .navBar-logo {
-        font-size: 12px;
-        line-height: 2em;
-        font-weight: lighter;
-      }
-      .navBar-menu {
-        display: none;
-        height:auto;
-        .menu-name {
-          color: #293845;
-          font-size: 1.4rem;
-          margin: 15px 0;
-        }
-      }
-      .hamburger {
-        display: block;
-        @media screen and (max-width:300px) {
-          position:absolute;
-          right:1px;
-        }
-      }
-      .navBar-menu.active {
+        margin-right: 5px;
+        font-size: 50px;
         display: flex;
-        flex-direction: column;
+        align-items: flex-end;
       }
     }
   }
+  .navBar-logo-text {
+    @media screen and(max-width:$breakpoint-width and 1000px) {
+      width: 80px;
+      margin-left: 10px;
+    }
+  }
+  .navBar-logo-text a {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    @media screen and(max-width:$breakpoint-width and 1000px) {
+      font-size: 20px;
+    }
+  }
+  .navBar-menu {
+    padding: 20px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    a:hover {
+      color: rgb(147, 207, 230);
+    }
+    @media screen and(max-width:$breakpoint-width and 1000px) {
+      display: none;
+    }
+    .menu-name {
+      font-weight: bold;
+      margin: auto 50px;
+      font-size: 25px;
+      padding: 5px;
+      color: #fff;
+      @media screen and(max-width:$breakpoint-width and 1060px) {
+        font-size: 22px;
+      }
+      @media screen and(max-width:$breakpoint-width and 1000px) {
+        font-size: 1.4rem;
+        margin: 15px 0;
+      }
+    }
+  }
+  .hamburger {
+    i {
+      color: #011827;
+    }
+    position: absolute;
+    font-size: 2em;
+    right: 20px;
+    display: none;
+    @media screen and(max-width:$breakpoint-width and 1000px) {
+      display: block;
+    }
+    @media screen and (max-width: 300px) {
+      position: absolute;
+      right: 1px;
+    }
+  }
+}

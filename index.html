@@ -1,234 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/07a95dbd5e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css" />
-  <script src="https://kit.fontawesome.com/07a95dbd5e.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="shortcut icon" href="#" />
+    <title>ESC</title>
+  </head>
 
-  <link rel="shortcut icon" href="#" />
-  <title>ESC</title>
-</head>
-
-<body>
-  <nav class="navBar">
-    <div class="navBar-logo">
-      <img class="logo-icon" src='./imgs/image 4.png'>
-      <div class="navBar-logo-text">
-        <a href="">Hacker Escape Rooms</a>
+  <body>
+    <nav class="navBar">
+      <div class="navBar-logo">
+        <img class="logo-icon" src="./imgs/image 4.png" />
+        <div class="navBar-logo-text">
+          <a href="">Hacker Escape Rooms</a>
+        </div>
       </div>
-    </div>
-    <div class="navBar-menu">
-      <a class="menu-name" href="#">Play online</a>
-      <a class="menu-name" href="#">Play on-site</a>
-      <a class="menu-name" href="#">The story</a>
-      <a class="menu-name" href="#">Contact us</a>
-    </div>
-    <a href="#" class="hamburger" role="button">
-      <i class="fas fa-bars"></i>
-    </a>
-  </nav>
-  <div class="container-main">
-    <div class="headImg">
-      <div class="headImg-btns">
-        <button class="btns firstBtn-headImg">
+      <div class="navBar-menu">
+        <a class="menu-name" href="#">Play online</a>
+        <a class="menu-name" href="#">Play on-site</a>
+        <a class="menu-name" href="#">The story</a>
+        <a class="menu-name" href="#">Contact us</a>
+      </div>
+      <a href="#" class="hamburger" role="button">
+        <i class="fas fa-bars"></i>
+      </a>
+    </nav>
+    <div class="container-main">
+      <div class="headImg">
+        <div class="headImg-btns">
+          <button class="btns firstBtn-headImg">
+            <a href="#"> Online challenges </a>
+          </button>
+          <button class="btns secondBtn-headImg">
+            <a href="#"> On-site challenges </a>
+          </button>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="quotes firstQuote" name="firstQuote-label">
+          <img class="quote-img" src="./imgs/image 3.png" />
+          <div class="quote-flex">
+            <blockquote>
+              This is a quote about how amazing this place is and how much fun
+              me and my friends had when we tried it
+            </blockquote>
+            <cite for="firstQuote-cite" class="quote-cite"
+              >John Doe, visited us in September 2021</cite
+            >
+          </div>
+        </div>
+        <div class="quotes secondQuote" name="secondQuote-cite">
+          <img class="quote-img" src="./imgs/image 3.png" />
+          <div class="quote-flex">
+            <blockquote>
+              This is a quote about how amazing this place is and how much fun
+              me and my friends had when we tried it
+            </blockquote>
+            <cite for="firstQuote-cite" class="quote-cite"
+              >John Doe, visited us in September 2021</cite
+            >
+          </div>
+        </div>
+      </div>
+      <div class="cards-with-carousel">
+        <h1 class="popular">Popular challenges righht now</h1>
+        <div class="main-carousel">
+          <div class="carousel-cell">
+            <div class="card">
+              <img class="card-img" src="./imgs/image 3-1.png" />
+              <div class="card-container">
+                <h4 class="card-title">Title of room (on-site)</h4>
+                <div class="stars">
+                  <div>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="far fa-star"></i>
+                  </div>
+                  <span class="card-little-text">2-6 participants</span>
+                </div>
+                <p class="card-body">
+                  Oportet uti solum de actibus prosequtionem et fungam, haec
+                  leniter et blandus et reservato.
+                </p>
+                <a href="#" class="card-btn" role="button">Book this room</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="card">
+              <img class="card-img" src="./imgs/image 3-1.png" />
+              <div class="card-container">
+                <h4 class="card-title">Title of room (on-site)</h4>
+                <div class="stars">
+                  <div>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="far fa-star"></i>
+                  </div>
+                  <span class="card-little-text">2-6 participants</span>
+                </div>
+                <p class="card-body">
+                  Oportet uti solum de actibus prosequtionem et fungam, haec
+                  leniter et blandus et reservato.
+                </p>
+                <a href="#" class="card-btn" role="button">Book this room</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="card">
+              <img class="card-img" src="./imgs/image 3-1.png" />
+              <div class="card-container">
+                <h3 class="card-title">Title of room (on-site)</h3>
+                <div class="stars">
+                  <div>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="far fa-star"></i>
+                  </div>
+                  <span class="card-little-text">2-6 participants</span>
+                </div>
+                <p class="card-body">
+                  Oportet uti solum de actibus prosequtionem et fungam, haec
+                  leniter et blandus et reservato.
+                </p>
+                <a href="#" class="card-btn" role="button">Book this room</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="two-btns">
+        <button class="firstBtn-in-two-btns">
           <a href="#"> Online challenges </a>
         </button>
-        <button class="btns secondBtn-headImg">
+        <button class="secondBtn-in-two-btns">
           <a href="#"> On-site challenges </a>
         </button>
       </div>
-    </div>
-    <div class="testimonial">
-      <div class="quotes firstQuote" name="firstQuote-label">
-        <img class="quote-img" src="./imgs/image 3.png" />
-        <div class="quote-flex">
-          <blockquote>
-            This is a quote about how amazing this place is and how much fun
-            me and my friends had when we tried it
-          </blockquote>
-          <cite for="firstQuote-cite" class="quote-cite">John Doe, visited us in September 2021</cite>
+      <div class="full-story">
+        <div class="full-story-desc">
+          Quodsi haberent magnalia inter potentiam et divitias, et non illam
+          quidem haec eo spectant haec quoque vos omnino desit illud quo solo
+          felicitatis libertatisque perficiuntur.
         </div>
+        <button id="btn-in-full-story">
+          <a href="#"> Read the full story </a>
+        </button>
       </div>
-      <div class="quotes secondQuote" name="secondQuote-cite">
-        <img class="quote-img" src="./imgs/image 3.png" />
-        <div class="quote-flex">
-          <blockquote>
-            This is a quote about how amazing this place is and how much fun
-            me and my friends had when we tried it
-          </blockquote>
-          <cite for="firstQuote-cite" class="quote-cite">John Doe, visited us in September 2021</cite>
-        </div>
-      </div>
-    </div>
-    <div class="cards-with-carousel">
-      <h1 class="popular">Popular challenges righht now</h1>
-      <div class="main-carousel">
-        <div class="carousel-cell">
-          <div class="card">
-            <img class="card-img" src="./imgs/image 3(1).png" />
-            <div class="card-container">
-              <h4 class="card-title">Title of room (on-site)</h4>
-              <div class="stars">
-                <div>
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i><i class="far fa-star"></i>
-                </div>
-                <span class="card-little-text">2-6 participants</span>
-              </div>
-              <p class="card-body">
-                Oportet uti solum de actibus prosequtionem et fungam, haec leniter
-                et blandus et reservato.
+      <div class="four-boxes">
+        <div class="two-divs-style first-div">
+          <div class="imgs-in-four-boxes">
+            <img
+              src="./imgs/nesa-by-makers-IgUR1iX0mqM-unsplash 1.png"
+              alt=""
+            />
+          </div>
+          <div class="textBox-flex">
+            <div class="texts-in-four-boxes">
+              <p class="text-title-in-four-boxes">
+                Play with your friends or build your team stronger at work
               </p>
-              <a href="#" class="card-btn" role="button">Book this room</a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell">
-          <div class="card">
-            <img class="card-img" src="./imgs/image 3(1).png" />
-            <div class="card-container">
-              <h4 class="card-title">Title of room (on-site)</h4>
-              <div class="stars">
-                <div>
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i><i class="far fa-star"></i>
-                </div>
-                <span class="card-little-text">2-6 participants</span>
-              </div>
-              <p class="card-body">
-                Oportet uti solum de actibus prosequtionem et fungam, haec leniter
-                et blandus et reservato.
-              </p>
-              <a href="#" class="card-btn" role="button">Book this room</a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell">
-          <div class="card">
-            <img class="card-img" src="./imgs/image 3(1).png" />
-            <div class="card-container">
-              <h3 class="card-title">Title of room (on-site)</h3>
-              <div class="stars">
-                <div>
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i><i class="far fa-star"></i>
-                </div>
-                <span class="card-little-text">2-6 participants</span>
-              </div>
-              <p class="card-body">
-                Oportet uti solum de actibus prosequtionem et fungam, haec leniter
-                et blandus et reservato.
-              </p>
-              <a href="#" class="card-btn" role="button">Book this room</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="two-btns">
-      <button class="firstBtn-in-two-btns">
-        <a href="#"> Online challenges </a>
-      </button>
-      <button class="secondBtn-in-two-btns">
-        <a href="#"> On-site challenges </a>
-      </button>
-    </div>
-    <div class="full-story">
-      <div class="full-story-desc">
-        Quodsi haberent magnalia inter potentiam et divitias, et non illam
-        quidem haec eo spectant haec quoque vos omnino desit illud quo solo
-        felicitatis libertatisque perficiuntur.
-      </div>
-      <button id="btn-in-full-story">
-        <a href="#"> Read the full story </a>
-      </button>
-    </div>
-    <div class="four-boxes">
-      <div class="two-divs-style first-div">
-        <div class="imgs-in-four-boxes">
-          <img src="./imgs/nesa-by-makers-IgUR1iX0mqM-unsplash 1.png" alt="" />
-        </div>
-        <div class="textBox-flex">
-          <div class="texts-in-four-boxes">
-            <p class="text-title-in-four-boxes">
-              Play with your friends or build your team stronger at work
-            </p>
-            <span class="text-desc-in-four-boxes">Tanta petere igitur, ne sineres memini fieri etiam aliquam
-              inclinationem ad consequendum minima. Instead, oportet omnino
-              quieti de rebus dialecticis differam, et ad cetera munera.
-            </span>
-            <button class="btns-in-four-boxes firstBtn-in-four-boxes">
-              <a href="#"> Book on-site today </a>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="two-divs-style second-div">
-        <div class="textBox-flex">
-          <div class="texts-in-four-boxes">
-            <p class="text-title-in-four-boxes">
-              Play online or visit our venue for one of our 25 escape rooms
-            </p>
-            <span class="text-desc-in-four-boxes">
-              Tanta petere igitur, ne sineres memini fieri etiam aliquam
-              inclinationem ad consequendum minima. Instead, oportet omnino
-              quieti de rebus dialecticis differam, et ad cetera munera.
-            </span>
-            <div class="btns-flex-in-four-boxes">
-              <button class="
-                    btns-in-four-boxes
-                    secondBtn-in-four-boxes
-                    play-online-btn
-                  ">
-                <a href="#">See all challenges</a>
+              <span class="text-desc-in-four-boxes"
+                >Tanta petere igitur, ne sineres memini fieri etiam aliquam
+                inclinationem ad consequendum minima. Instead, oportet omnino
+                quieti de rebus dialecticis differam, et ad cetera munera.
+              </span>
+              <button class="btns-in-four-boxes firstBtn-in-four-boxes">
+                <a href="#"> Book on-site today </a>
               </button>
             </div>
           </div>
         </div>
-        <div class="imgs-in-four-boxes">
-          <img src="./imgs/kelly-sikkema-YK0HPwWDJ1I-unsplash 1.png" alt="" />
+        <div class="two-divs-style second-div">
+          <div class="textBox-flex">
+            <div class="texts-in-four-boxes">
+              <p class="text-title-in-four-boxes">
+                Play online or visit our venue for one of our 25 escape rooms
+              </p>
+              <span class="text-desc-in-four-boxes">
+                Tanta petere igitur, ne sineres memini fieri etiam aliquam
+                inclinationem ad consequendum minima. Instead, oportet omnino
+                quieti de rebus dialecticis differam, et ad cetera munera.
+              </span>
+              <div class="btns-flex-in-four-boxes">
+                <button
+                  class="
+                    btns-in-four-boxes
+                    secondBtn-in-four-boxes
+                    play-online-btn
+                  "
+                >
+                  <a href="#">See all challenges</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="imgs-in-four-boxes">
+            <img src="./imgs/kelly-sikkema-YK0HPwWDJ1I-unsplash 1.png" alt="" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer">
-    <div class="footer-left">
-      <h4 id="footer-left-title">[Esc] Hacker Escape Rooms</h4>
-      <span id="footer-left-desc">Sollicitant homines non sunt nisi quam formae rerum principiis
-        opiniones. Mors enim est terribilis ut Socrati aliud esse
-      </span>
-    </div>
-    <div class="footer-middle">
-      <div class="footer-middle-container">
-        <h4 class="footer-middle-title">Site map</h4>
-        <div class="footer-middle-menu">
-          <a href="#">The Story</a>
-          <a href="#">Contact Us</a>
-          <a href="#">Legal</a>
+    <div class="footer">
+      <div class="footer-left">
+        <h4 class="footer-titles">[Esc] Hacker Escape Rooms</h4>
+        <span id="footer-left-desc"
+          >Sollicitant homines non sunt nisi quam formae rerum principiis
+          opiniones. Mors enim est terribilis ut Socrati aliud esse
+        </span>
+      </div>
+      <div class="footer-middle">
+        <div class="footer-middle-container">
+          <h4 class="footer-titles">Site map</h4>
+          <div class="footer-middle-menu">
+            <a href="#">The Story</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Legal</a>
+          </div>
+        </div>
+        <div class="footer-middle-container">
+          <a href="#">Play online</a>
+          <a href="#">Play on-site</a>
         </div>
       </div>
-      <div class="footer-middle-container">
-        <a href="#">Play online</a>
-        <a href="#">Play on-site</a>
-      </div>
-    </div>
-    <div class="footer-right">
-       <h4 class="footer-right-title">Follow us on</h4>
+      <div class="footer-right">
+        <h4 class="footer-titles">Follow us on</h4>
         <div class="footer-right-sns">
           <a href="#">Facebook</a>
           <a href="#">Instagram</a>
           <a href="#">Youtube</a>
         </div>
+      </div>
     </div>
-  </div>
-  <script src="src/div-scss-containers/js-files/navBar.js"></script>
-</body>
-
+    <script src="src/div-scss-containers/js-files/navBar.js"></script>
+  </body>
 </html>

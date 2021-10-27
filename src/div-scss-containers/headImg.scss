@@ -1,69 +1,65 @@
-.headImg{
-    display:grid;
-    grid-template-columns: repeat(4,auto);
-    grid-column: 1/4;
-    position: relative;
-    background:url(/imgs/image\ 2.png);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-    @include img-style;
+.headImg {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-column: 1/4;
+  position: relative;
+  background: url("/imgs/image\ 2.png");
+  @include background-img;
+  @include img-style;
+  @media screen and (max-width: $breakpoint-width) {
+    background: url("/imgs/image\ 3-1.png");
+    @include background-img;
+    height: 274px;
+  }
+  #firstImg {
     @media screen and (max-width: $breakpoint-width) {
-      background:url(/imgs/image\ 3\(1\).png);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-      height:274px;
+      width: 65px;
     }
-    #firstImg {
-      @media screen and (max-width: $breakpoint-width) {
-        width: 65px;
-      }
-    }
-    .headImg-btns {
-      position: absolute;
+  }
+  .headImg-btns {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 93%;
+    font-size: 20px;
+    @media screen and (max-width: $breakpoint-width) {
+      top: 115%;
       display: flex;
-      justify-content: center;
-      top: 93%;
-      font-size: 20px;
-      @media screen and (max-width: $breakpoint-width) {
-          top: 115%;
-          display: flex;
-          flex-direction: column-reverse;
-          align-items: center;
-        }
+      flex-direction: column-reverse;
+      align-items: center;
     }
-    .secondBtn-headImg {
-      @include btn-style;
-      padding: 18px 35px;
-      a{
-        color:#011827;
-      font-size:24px;
+  }
+  .secondBtn-headImg {
+    @include btn-style;
+    padding: 18px 35px;
+    a {
+      color: #011827;
+      font-size: 24px;
     }
-      @include red-to-blue;
+    @include red-to-blue;
+  }
+  .firstBtn-headImg {
+    margin-right: 20px;
+    @include btn-style;
+    padding: 18px 35px;
+    a {
+      font-size: 24px;
     }
-    .firstBtn-headImg {
-        margin-right:20px;
-        @include btn-style;
-        padding: 18px 35px;
-        a{
-        font-size:24px;
+    @media screen and (max-width: $breakpoint-width) {
+      a {
+        font-size: 16px;
+        color: #36769d;
+        font-weight: 500;
       }
-      @media screen and (max-width: $breakpoint-width) {
-        a{
-          font-size:16px;
-          color:#36769D;
-          font-weight:500;
-        }
-        background-color: #fff;
-        border: none;
-        text-decoration: underline;
-        text-decoration-color:#83aac2;
-        padding: 3px;
-        margin:10px 0 0 0;
-        width: 180px;
-        border-radius: 0;
-        font-size: 18px;
-      }
+      background-color: #fff;
+      border: none;
+      text-decoration: underline;
+      text-decoration-color: #83aac2;
+      padding: 3px;
+      margin: 10px 0 0 0;
+      width: 180px;
+      border-radius: 0;
+      font-size: 18px;
     }
+  }
 }

@@ -1,18 +1,60 @@
-.footer{
+.footer {
   background-color: #011827;
   display: flex;
-  @media screen and (max-width: $breakpoint-width) {
+  font-size: 18px;
+  padding: 100px 80px;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  @media screen and (max-width: $breakpoint-width and 1010px) {
     @include change-direction-to-column;
     padding: 50px 18px;
   }
-  .footer-middle-container{
-    @include change-direction-to-column;
+  .footer-left {
+    padding: 50px;
+    width: 50%;
+    #footer-left-desc {
+      color: #fff;
+      display: inline-block;
+      width: 80%;
+      @media screen and (max-width: $breakpoint-width) {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: $breakpoint-width and 1010px) {
+      margin-bottom: 20px;
+      padding: 0;
+      width: 100%;
+    }
   }
-  .footer-middle-menu{
-    @include change-direction-to-column;
+  .footer-titles {
+    color: #fff;
+    margin-bottom: 8px;
   }
-  .footer-right-sns{
-    @include change-direction-to-column;
+  .footer-middle {
+    padding: 50px;
+    @media screen and (max-width: $breakpoint-width and 1010px) {
+      padding: 0;
+    }
+    .footer-middle-container {
+      @include change-direction-to-column;
+      @media screen and (max-width: $breakpoint-width and 1010px) {
+        margin: 20px 0;
+      }
+    }
+    .footer-middle-menu {
+      @include change-direction-to-column;
+    }
+  }
+  .footer-right {
+    padding: 50px;
+    @media screen and (max-width: $breakpoint-width and 1010px) {
+      margin-top: 20px;
+      padding: 0;
+    }
+    .footer-right-sns {
+      @include change-direction-to-column;
+    }
   }
 }
-  

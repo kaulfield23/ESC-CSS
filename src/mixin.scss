@@ -9,16 +9,21 @@
     height: 250px;
   }
 }
+@mixin background-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 @mixin btn-style {
-  background-color: #E3170A;
+  background-color: #e3170a;
   border: none;
   color: #fff;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
-  a{
+  a {
     text-decoration: none;
-    color:#fff;
+    color: #fff;
   }
   @media screen and (max-width: 300) {
     width: 50%;
@@ -29,13 +34,13 @@
   border: none;
   background-color: #fff;
   text-decoration: underline;
-  text-decoration-color:#83aac2;
+  text-decoration-color: #83aac2;
   padding: 3px;
-  margin:10px 0 0 0;
+  margin: 10px 0 0 0;
   width: 180px;
   border-radius: 0;
   font-size: 18px;
-  
+
   @media screen and (max-width: 300) {
     width: 50%;
   }
@@ -43,29 +48,13 @@
   font-size: 18px;
   margin: 10px auto;
   font-weight: bold;
-  a{
+  a {
     text-decoration: none;
-    color:#36769D;
-    font-weight:500;
-    font-size:16px;
-    
+    color: #36769d;
+    font-weight: 500;
+    font-size: 16px;
   }
 }
-
-// @mixin white-btn-style-2 {
-//   a{
-//     text-decoration: none;
-//     color: #6558f5;
-//   }
-//   background-color: #fff;
-//   font-size: 18px;
-//   padding: 10px 15px;
-//   margin-top: 20px;
-//   border-radius: 5px;
-//   border-color: #c7c3fb;
-//   border-style: solid;
-//   font-weight: bold;
-// }
 
 @mixin footer-flex {
   @media screen and(max-width:$breakpoint-width) {
@@ -78,18 +67,18 @@
   }
 }
 
-@mixin red-to-blue{
-  background-color: #8ACFE5;
+@mixin red-to-blue {
+  background-color: #8acfe5;
   @media screen and (max-width: $breakpoint-width) {
     padding: 12px 1em;
     font-size: 18px;
-    margin:0;
-    a{
-      color:#011827;
+    margin: 0;
+    a {
+      color: #011827;
     }
   }
 }
-@mixin change-direction-to-column{
-  display:flex;
+@mixin change-direction-to-column {
+  display: flex;
   flex-direction: column;
 }
