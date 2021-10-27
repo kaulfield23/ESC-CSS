@@ -1,33 +1,44 @@
 .full-story {
   text-align: center;
-  margin-bottom: 150px;
-  @media screen and (max-width: $breakpoint-width) {
+  background-color: #011827;
+  padding:100px 20px;
+  @media screen and (max-width: $breakpoint-width and 800px) {
     font-size: 20px;
     text-align: center;
-    margin: 55px 10px 70px 10px;
+    margin-top:55px;
   }
   .full-story-desc {
+    color: #fff;
     margin: 0 auto;
     width: 600px;
     font-size: 20px;
     font-weight: bold;
+    font-size: 28px;
+    line-height: 1.3em;
     @media screen and (max-width: 700px) {
       width: 90%;
+      height:80%;
     }
   }
   #btn-in-full-story {
-    background-color: #fff;
-    color: #6558f5;
-    font-size: 18px;
-    padding: 10px 15px;
-    margin-top: 20px;
+    background-color: #011827;
+    font-size: 24px;
+    padding: 10px 40px;
+    margin-top: 30px;
     border-radius: 5px;
-    border-color: #c7c3fb;
+    border-color: #8ACFE5;
     border-style: solid;
     font-weight: bold;
-    a{
+    a {
       text-decoration: none;
-      color: #6558f5;
+      color:#8ACFE5;
+    }
+    @media screen and (max-width: $breakpoint-width) {
+      width:70%;
+      padding:10px 5%;
+    }
+    @media screen and (max-width: 427px) {
+      font-size:18px;
     }
   }
 }

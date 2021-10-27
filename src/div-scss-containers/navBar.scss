@@ -13,7 +13,6 @@
       @media screen and(max-width:$breakpoint-width and 1000px) {
         display:flex;
         align-items: center;
-
       }
       .logo-icon {
        width:128px;
@@ -48,6 +47,9 @@
         font-weight:bold;
         margin:auto 50px;
         font-size: 25px;
+        @media screen and(max-width:$breakpoint-width and 1060px) {
+          font-size:22px;
+        }
         padding: 5px;
         color:#fff;
       }

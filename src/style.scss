@@ -13,6 +13,8 @@ $shrink-breakpoint-width: 1000px;
 html {
   width: 100vw;
   overflow-x: hidden;
+  max-width:1280px;
+  margin:0 auto;
 }
 .ya {
   font-size: 40px;
