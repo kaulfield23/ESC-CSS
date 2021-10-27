@@ -704,6 +704,26 @@ body {
 
 .footer {
   background-color: #011827;
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 18px;
+  }
+}
+.footer .footer-middle-container {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-middle-menu {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-right-sns {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -89,3 +89,7 @@
     }
   }
 }
+@mixin change-direction-to-column{
+  display:flex;
+  flex-direction: column;
+}

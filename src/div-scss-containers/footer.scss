@@ -1,4 +1,18 @@
 .footer{
   background-color: #011827;
+  display: flex;
+  @media screen and (max-width: $breakpoint-width) {
+    @include change-direction-to-column;
+    padding: 50px 18px;
+  }
+  .footer-middle-container{
+    @include change-direction-to-column;
+  }
+  .footer-middle-menu{
+    @include change-direction-to-column;
+  }
+  .footer-right-sns{
+    @include change-direction-to-column;
+  }
 }
   
