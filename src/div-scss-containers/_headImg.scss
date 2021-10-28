@@ -9,6 +9,7 @@
   @media screen and (max-width: $breakpoint-width) {
     background: url("/imgs/image\ 2\ for\ small.png");
     @include background-img;
+    margin-bottom: 180px;
   }
   #firstImg {
     @media screen and (max-width: $breakpoint-width) {
@@ -36,6 +37,11 @@
       font-size: 24px;
     }
     @include red-to-blue;
+    @media screen and (max-width: $galaxy-fold-width) {
+      a {
+        font-size: 18px;
+      }
+    }
   }
   .firstBtn-headImg {
     margin-right: 20px;

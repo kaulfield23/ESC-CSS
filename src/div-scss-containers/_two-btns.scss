@@ -23,7 +23,7 @@
   #secondBtn-in-two-btns {
     @include red-btn-style;
     @include red-to-blue;
-    padding: 15px 35px;
+    padding: 18px 35px;
     margin: 5px;
     a {
       color: $black-color;
@@ -32,6 +32,11 @@
     @media screen and (max-width: $breakpoint-width) {
       @include red-to-blue;
       padding: 15px 10px;
+    }
+    @media screen and (max-width: $galaxy-fold-width) {
+      a {
+        font-size: 18px;
+      }
     }
   }
 }
