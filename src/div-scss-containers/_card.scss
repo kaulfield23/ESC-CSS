@@ -3,21 +3,27 @@
   @media screen and (max-width: $breakpoint-width) {
     margin: 40px auto;
   }
-  .popular {
+  #popular {
     text-align: center;
     font-size: 36px;
     font-weight: 500;
     margin: 90px 0;
     @media screen and (max-width: $breakpoint-width) {
-      font-size: 23px;
+      font-size: 32px;
       padding: 10px;
       margin: 30px auto;
+    }
+    @media screen and (max-width: 460px) {
+      font-size: 24px;
     }
   }
   .carousel-cell {
     margin-right: 10px;
     border-radius: 5px;
-    counter-increment: carousel-cell;
+    @media screen and (max-width: $breakpoint-width) {
+      margin-right: 20px;
+      width: 300px;
+    }
     .card {
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
       width: 363px;
@@ -50,7 +56,7 @@
           line-height: 1.2em;
         }
         .card-btn {
-          @include btn-style;
+          @include red-btn-style;
           text-decoration: none;
           padding: 10px 30px;
           position: absolute;

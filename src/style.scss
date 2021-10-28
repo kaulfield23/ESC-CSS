@@ -3,14 +3,12 @@ $shrink-breakpoint-width: 1000px;
 $black-color: #011827;
 $white-color: #fff;
 $light-blue: #8acfe5;
-
 @import "./mixin.scss";
-
 * {
   margin: 0;
   font-family: "Roboto";
   padding: 0;
-  color: #293845;
+  color: $black-color;
   user-select: none;
   line-height: 1.5em;
 }
@@ -29,11 +27,11 @@ body {
   display: grid;
   grid-template-rows: repeat(6, auto);
 }
-@import "./div-scss-containers/navBar.scss";
-@import "./div-scss-containers/headImg.scss";
-@import "./div-scss-containers/testimonial.scss";
-@import "./div-scss-containers/card.scss";
-@import "./div-scss-containers/two-btns.scss";
-@import "./div-scss-containers/full-story.scss";
-@import "./div-scss-containers/four-boxes.scss";
-@import "./div-scss-containers/footer.scss";
+@import "./div-scss-containers/_navBar.scss";
+@import "./div-scss-containers/_headImg.scss";
+@import "./div-scss-containers/_testimonial.scss";
+@import "./div-scss-containers/_card.scss";
+@import "./div-scss-containers/_two-btns.scss";
+@import "./div-scss-containers/_full-story.scss";
+@import "./div-scss-containers/_four-boxes.scss";
+@import "./div-scss-containers/_footer.scss";

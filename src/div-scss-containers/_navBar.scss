@@ -42,7 +42,7 @@
     font-size: 40px;
     font-weight: bold;
     @media screen and(max-width:$breakpoint-width and 1000px) {
-      font-size: 20px;
+      font-size: 23px;
     }
   }
   .navBar-menu {
@@ -60,7 +60,7 @@
     .menu-name {
       font-weight: bold;
       margin: auto 50px;
-      font-size: 25px;
+      font-size: 24px;
       padding: 5px;
       color: $white-color;
       @media screen and(max-width:$breakpoint-width and 1060px) {

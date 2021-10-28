@@ -7,7 +7,7 @@
   @include background-img;
   @include img-style;
   @media screen and (max-width: $breakpoint-width) {
-    background: url("/imgs/image\ 3-1.png");
+    background: url("/imgs/image\ 2\ for\ small.png");
     @include background-img;
   }
   #firstImg {
@@ -29,7 +29,7 @@
     }
   }
   .secondBtn-headImg {
-    @include btn-style;
+    @include red-btn-style;
     padding: 18px 35px;
     a {
       color: $black-color;
@@ -39,26 +39,13 @@
   }
   .firstBtn-headImg {
     margin-right: 20px;
-    @include btn-style;
+    @include red-btn-style;
     padding: 18px 35px;
     a {
       font-size: 24px;
     }
     @media screen and (max-width: $breakpoint-width) {
-      a {
-        font-size: 16px;
-        color: #36769d;
-        font-weight: 500;
-      }
-      background-color: $white-color;
-      border: none;
-      text-decoration: underline;
-      text-decoration-color: #83aac2;
-      padding: 3px;
-      margin: 10px 0 0 0;
-      width: 180px;
-      border-radius: 0;
-      font-size: 18px;
+      @include white-btn-style;
     }
   }
 }

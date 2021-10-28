@@ -13,7 +13,7 @@
   background-size: cover;
   background-position: center;
 }
-@mixin btn-style {
+@mixin red-btn-style {
   background-color: #e3170a;
   border: none;
   color: #fff;
@@ -29,28 +29,15 @@
   }
 }
 @mixin white-btn-style {
-  color: #6558f5;
   border: none;
   background-color: #fff;
   text-decoration: underline;
   text-decoration-color: #83aac2;
-  padding: 3px;
-  margin: 10px 0 0 0;
-  width: 180px;
-  border-radius: 0;
-  font-size: 18px;
-
-  @media screen and (max-width: 300) {
-    width: 50%;
-  }
-  border-radius: 0;
-  font-size: 18px;
   margin: 10px auto;
-  font-weight: bold;
   a {
     text-decoration: none;
     color: #36769d;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 16px;
   }
 }
