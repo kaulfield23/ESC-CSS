@@ -1,10 +1,10 @@
 .footer {
-  background-color: #011827;
+  background-color: $black-color;
   display: flex;
   font-size: 18px;
   padding: 100px 80px;
   a {
-    color: #fff;
+    color: $white-color;
     text-decoration: none;
   }
   @media screen and (max-width: $breakpoint-width and 1010px) {
@@ -15,7 +15,7 @@
     padding: 50px;
     width: 50%;
     #footer-left-desc {
-      color: #fff;
+      color: $white-color;
       display: inline-block;
       width: 80%;
       @media screen and (max-width: $breakpoint-width) {
@@ -29,7 +29,7 @@
     }
   }
   .footer-titles {
-    color: #fff;
+    color: $white-color;
     margin-bottom: 8px;
   }
   .footer-middle {

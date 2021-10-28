@@ -1,36 +1,35 @@
 .two-btns {
   text-align: center;
-  margin-bottom:80px;
+  margin-bottom: 80px;
   @media screen and (max-width: $breakpoint-width) {
     display: flex;
     flex-direction: column;
-    width:65%;
-    margin:0 auto;
+    width: 65%;
+    margin: 0 auto;
   }
   .firstBtn-in-two-btns {
     @include btn-style;
     padding: 18px 35px;
-    margin:5px;
-    a{
-      color:#fff;
-    font-size:24px;
-  }
+    margin: 5px;
+    a {
+      color: $white-color;
+      font-size: 24px;
+    }
     @media screen and (max-width: $breakpoint-width) {
       @include red-to-blue;
-      }
+    }
   }
-  .secondBtn-in-two-btns{
+  .secondBtn-in-two-btns {
     @include btn-style;
     @include red-to-blue;
     padding: 18px 35px;
-    margin:5px;
-    a{
-      color:#011827;
-    font-size:24px;
-  }
+    margin: 5px;
+    a {
+      color: #011827;
+      font-size: 24px;
+    }
     @media screen and (max-width: $breakpoint-width) {
       @include white-btn-style;
-      
-      }
+    }
   }
 }

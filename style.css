@@ -14,12 +14,6 @@ html {
   margin: 0 auto;
 }
 
-.ya {
-  font-size: 40px;
-  border: 2px solid black;
-  height: 300px;
-}
-
 body {
   height: 100vh;
   display: grid;
@@ -32,7 +26,7 @@ body {
 }
 
 .navBar {
-  padding: 15px;
+  padding: 30px 20px 0 20px;
   display: flex;
   flex-direction: column;
   background-color: #011827;
@@ -41,6 +35,9 @@ body {
   text-decoration: none;
 }
 @media screen and (max-width: 1000px) {
+  .navBar {
+    padding-bottom: 30px;
+  }
   .navBar .navBar-menu.active {
     display: flex;
     flex-direction: column;
@@ -63,8 +60,9 @@ body {
 }
 @media screen and (max-width: 1000px) {
   .navBar .navBar-logo .logo-icon {
-    margin-right: 5px;
+    margin-right: 0px;
     font-size: 50px;
+    height: 100px;
     display: flex;
     align-items: flex-end;
   }
@@ -87,7 +85,8 @@ body {
 }
 .navBar .navBar-menu {
   padding: 20px;
-  margin: 20px auto;
+  margin: 0 auto;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -147,12 +146,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: #dfe6ed;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 500px;
+  height: 468px;
 }
 @media screen and (max-width: 500px) {
   .headImg {
@@ -165,7 +163,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 274px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -213,7 +210,6 @@ body {
 }
 @media screen and (max-width: 600px) {
   .headImg .secondBtn-headImg {
-    padding: 12px 1em;
     font-size: 18px;
     margin: 0;
   }
@@ -474,7 +470,6 @@ body {
 }
 @media screen and (max-width: 600px) and (max-width: 600px) {
   .two-btns .firstBtn-in-two-btns {
-    padding: 12px 1em;
     font-size: 18px;
     margin: 0;
   }
@@ -504,7 +499,6 @@ body {
 }
 @media screen and (max-width: 600px) {
   .two-btns .secondBtn-in-two-btns {
-    padding: 12px 1em;
     font-size: 18px;
     margin: 0;
   }
@@ -581,13 +575,13 @@ body {
   padding: 10px 40px;
   margin-top: 30px;
   border-radius: 5px;
-  border-color: #8ACFE5;
+  border-color: #8acfe5;
   border-style: solid;
   font-weight: bold;
 }
 .full-story #btn-in-full-story a {
   text-decoration: none;
-  color: #8ACFE5;
+  color: #8acfe5;
 }
 @media screen and (max-width: 600px) {
   .full-story #btn-in-full-story {

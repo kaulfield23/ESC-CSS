@@ -1,5 +1,9 @@
 $breakpoint-width: 600px;
 $shrink-breakpoint-width: 1000px;
+$black-color: #011827;
+$white-color: #fff;
+$light-blue: #8acfe5;
+
 @import "./mixin.scss";
 
 * {
@@ -13,13 +17,8 @@ $shrink-breakpoint-width: 1000px;
 html {
   width: 100vw;
   overflow-x: hidden;
-  max-width:1280px;
-  margin:0 auto;
-}
-.ya {
-  font-size: 40px;
-  border: 2px solid black;
-  height: 300px;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 body {
   height: 100vh;
@@ -33,7 +32,7 @@ body {
 @import "./div-scss-containers/navBar.scss";
 @import "./div-scss-containers/headImg.scss";
 @import "./div-scss-containers/testimonial.scss";
-@import './div-scss-containers/card.scss';
+@import "./div-scss-containers/card.scss";
 @import "./div-scss-containers/two-btns.scss";
 @import "./div-scss-containers/full-story.scss";
 @import "./div-scss-containers/four-boxes.scss";

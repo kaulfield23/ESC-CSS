@@ -13,16 +13,11 @@
       height: 300px;
     }
   }
-  // @media screen and(max-width:$breakpoint-width and 800px) {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
   .first-div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     @media screen and (max-width: $breakpoint-width and 800px) {
-      display: flex;
-      flex-direction: column;
+      @include change-direction-to-column;
     }
   }
   .second-div {
@@ -42,8 +37,7 @@
       padding: 20px 0;
     }
     .texts-in-four-boxes {
-      display: flex;
-      flex-direction: column;
+      @include change-direction-to-column;
       width: 80%;
       font-size: 24px;
       .text-desc-in-four-boxes {

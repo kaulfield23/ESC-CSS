@@ -9,7 +9,6 @@
   @media screen and (max-width: $breakpoint-width) {
     background: url("/imgs/image\ 3-1.png");
     @include background-img;
-    height: 274px;
   }
   #firstImg {
     @media screen and (max-width: $breakpoint-width) {
@@ -33,7 +32,7 @@
     @include btn-style;
     padding: 18px 35px;
     a {
-      color: #011827;
+      color: $black-color;
       font-size: 24px;
     }
     @include red-to-blue;
@@ -51,7 +50,7 @@
         color: #36769d;
         font-weight: 500;
       }
-      background-color: #fff;
+      background-color: $white-color;
       border: none;
       text-decoration: underline;
       text-decoration-color: #83aac2;
