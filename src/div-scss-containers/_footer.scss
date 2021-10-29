@@ -3,6 +3,9 @@
   display: flex;
   font-size: 18px;
   padding: 100px 80px;
+  @media screen and (max-width: 300px) {
+    font-size:14px;
+  }
   a {
     color: $white-color;
     text-decoration: none;
@@ -23,7 +26,7 @@
       }
     }
     @media screen and (max-width: $breakpoint-width and 1010px) {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       padding: 0;
       width: 100%;
     }
@@ -32,36 +35,36 @@
     color: $white-color;
     margin-bottom: 8px;
     @media screen and (max-width: $breakpoint-width and 1010px) {
-      margin: 0;
+      margin-bottom: 8px;
     }
   }
   .footer-middle {
     padding: 50px;
     @media screen and (max-width: $breakpoint-width and 1010px) {
       padding: 0;
+      a{ width:30%;}
     }
     .footer-middle-container {
       @include change-direction-to-column;
-      @media screen and (max-width: $breakpoint-width and 1010px) {
-        margin: 20px 0;
-      }
     }
     .footer-middle-menu {
       @include change-direction-to-column;
       margin-bottom: 30px;
       @media screen and (max-width: $breakpoint-width and 1010px) {
-        margin: 10px 0;
+        margin: 0 0 10px 0;
       }
     }
   }
   .footer-right {
     padding: 50px;
     @media screen and (max-width: $breakpoint-width and 1010px) {
-      margin-top: 20px;
+      margin-top: 30px;
       padding: 0;
     }
     .footer-right-sns {
       @include change-direction-to-column;
+      a{ width:30%;}
+
     }
   }
 }
