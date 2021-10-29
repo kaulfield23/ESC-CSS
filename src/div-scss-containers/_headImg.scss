@@ -1,7 +1,5 @@
 .headImg {
   display: grid;
-  // grid-template-columns: repeat(4, auto);
-  // grid-column: 1/4;
   position: relative;
   background: url("/imgs/image\ 2.png");
   @include background-img;

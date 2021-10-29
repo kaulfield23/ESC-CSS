@@ -25,10 +25,10 @@
       margin: 30px auto;
     }
     @media screen and (max-width: $galaxy-fold-width) {
-      font-size:18px;
+      font-size: 18px;
     }
     .quote-img {
-      margin: 0 40px;
+      margin: 0 15px 0 40px;
       width: 96.26px;
       height: 107px;
       border-radius: 50%;
@@ -44,14 +44,19 @@
       text-indent: 10px;
       font-size: 18px;
       @media screen and (max-width: $breakpoint-width) {
-        font-size:14px;
+        font-size: 14px;
       }
       @media screen and (max-width: $galaxy-fold-width) {
-        font-size:12px;
+        font-size: 12px;
       }
     }
   }
   .secondQuote {
+    margin-right: 20px;
+    padding-right: 0px;
+    .secondQuote-img {
+      margin-left: 0px;
+    }
     @media screen and (max-width: $breakpoint-width) {
       display: none;
     }

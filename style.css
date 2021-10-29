@@ -313,7 +313,7 @@ body {
   }
 }
 .testimonial .quotes .quote-img {
-  margin: 0 40px;
+  margin: 0 15px 0 40px;
   width: 96.26px;
   height: 107px;
   border-radius: 50%;
@@ -340,6 +340,13 @@ body {
   .testimonial .quotes .quote-cite {
     font-size: 12px;
   }
+}
+.testimonial .secondQuote {
+  margin-right: 20px;
+  padding-right: 0px;
+}
+.testimonial .secondQuote .secondQuote-img {
+  margin-left: 0px;
 }
 @media screen and (max-width: 600px) {
   .testimonial .secondQuote {
@@ -788,6 +795,11 @@ body {
   color: #fff;
   margin-bottom: 8px;
 }
+@media screen and (max-width: 1010px) {
+  .footer .footer-titles {
+    margin: 0;
+  }
+}
 .footer .footer-middle {
   padding: 50px;
 }
@@ -808,6 +820,12 @@ body {
 .footer .footer-middle .footer-middle-menu {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1010px) {
+  .footer .footer-middle .footer-middle-menu {
+    margin: 10px 0;
+  }
 }
 .footer .footer-right {
   padding: 50px;
