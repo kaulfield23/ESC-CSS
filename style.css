@@ -177,9 +177,6 @@ body {
     margin-bottom: 180px;
   }
 }
-.headImg #firstImg {
-  width: 100%;
-}
 @media screen and (max-width: 600px) {
   .headImg #firstImg {
     width: 65px;
@@ -291,7 +288,6 @@ body {
 }
 .testimonial .secondQuote {
   grid-column: span 1;
-  display: flex;
 }
 .testimonial .quotes {
   display: flex;

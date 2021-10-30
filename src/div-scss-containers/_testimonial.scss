@@ -11,7 +11,6 @@
   }
   .secondQuote {
     grid-column: span 1;
-    display: flex;
   }
   .quotes {
     display: flex;
@@ -53,10 +52,6 @@
     }
   }
   .secondQuote {
-    // margin-right: 20px;
-    .secondQuote-img {
-      // margin-left: 0px;
-    }
     @media screen and (max-width: $breakpoint-width) {
       display: none;
     }
