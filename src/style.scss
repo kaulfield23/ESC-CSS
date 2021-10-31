@@ -21,10 +21,7 @@ body {
   display: grid;
   grid-template-rows: repeat(3, auto);
 }
-.container {
-  display: grid;
-  grid-template-rows: repeat(6, auto);
-}
+
 @import "./div-scss-containers/_nav-bar.scss";
 @import "./div-scss-containers/_hero.scss";
 @import "./div-scss-containers/_testimonial.scss";
