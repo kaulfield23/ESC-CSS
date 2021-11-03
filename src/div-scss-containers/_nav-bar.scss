@@ -62,8 +62,10 @@
     a:hover {
       color: rgb(147, 207, 230);
     }
+   
     @media screen and(max-width:$breakpoint-width and 1000px) {
       display: none;
+     
     }
     .menu-name {
       font-weight: bold;
@@ -73,6 +75,7 @@
       color: $white-color;
       @media screen and(max-width:$breakpoint-width and 1060px) {
         font-size: 22px;
+       
       }
       @media screen and(max-width:$breakpoint-width and 1000px) {
         font-size: 1.4rem;
@@ -85,7 +88,7 @@
   }
   .hamburger {
     i {
-      color: #011827;
+      color: $white-color;
     }
     position: absolute;
     font-size: 2em;
@@ -101,4 +104,3 @@
   }
 }
 
-//ya
