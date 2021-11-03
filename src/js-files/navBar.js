@@ -31,3 +31,7 @@ closeButton.addEventListener("click", () => {
   navBackground.removeChild(menu);
   body.removeChild(navBackground);
 });
+
+function createElement() {}
+
+function createMenu() {}
