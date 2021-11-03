@@ -31,8 +31,8 @@
         align-items: flex-end;
       }
       @media screen and (max-width: $galaxy-fold-width) {
-        width:60px;
-        height:50px;
+        width: 60px;
+        height: 50px;
       }
     }
   }
@@ -50,7 +50,7 @@
       font-size: 23px;
     }
     @media screen and (max-width: $galaxy-fold-width) {
-      font-size:15px;
+      font-size: 15px;
     }
   }
   .navBar-menu {
@@ -62,10 +62,9 @@
     a:hover {
       color: rgb(147, 207, 230);
     }
-   
+
     @media screen and(max-width:$breakpoint-width and 1000px) {
       display: none;
-     
     }
     .menu-name {
       font-weight: bold;
@@ -75,14 +74,13 @@
       color: $white-color;
       @media screen and(max-width:$breakpoint-width and 1060px) {
         font-size: 22px;
-       
       }
       @media screen and(max-width:$breakpoint-width and 1000px) {
         font-size: 1.4rem;
         margin: 15px 0;
       }
       @media screen and (max-width: $galaxy-fold-width) {
-        font-size:18px;
+        font-size: 18px;
       }
     }
   }
@@ -104,3 +102,49 @@
   }
 }
 
+//navbar with small size
+.aNameHover {
+  color: white;
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+.aNameHover:hover {
+  color: rgb(147, 207, 230);
+}
+.navBackground {
+  background-color: rgba(226, 225, 225, 0.693);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  // animation-name:'navFadeIn';
+  // animation-duration: 1s;
+}
+.xIcon {
+  color: white;
+  position: absolute;
+  font-size: 48px;
+  top: 2%;
+  right: 6%;
+  cursor: pointer;
+}
+.phone-nav {
+  background-color: #011827;
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  top: 2.5%;
+  left: 2.5%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// @keyframes navFadeIn {
+//   from{opacity: 0;}
+//   to{opacity: 1;}
+// }
