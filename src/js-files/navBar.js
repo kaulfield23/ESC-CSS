@@ -11,11 +11,11 @@ hamburger.addEventListener("click", () => {
 
   //add fade in animation to navbar background
   navBackground.animate([{ opacity: 0 }, { opacity: 1 }], {
-    duration: 300,
+    duration: 200,
     iterations: 1,
   });
 
-  //pop up navbar after 350ms
+  //pop up navbar after 250ms
   setTimeout(() => {
     menuName.forEach((aName) => {
       aName.setAttribute("class", "aNameHover");
@@ -25,7 +25,7 @@ hamburger.addEventListener("click", () => {
     navBarMenu.setAttribute("class", "pop-up-nav");
     navBarMenu.appendChild(closeButton);
     navBackground.appendChild(navBarMenu);
-  }, 350);
+  }, 250);
 
   //remove created elements
   closeButton.addEventListener("click", () => {
