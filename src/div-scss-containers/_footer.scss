@@ -10,7 +10,7 @@
     color: $white-color;
     text-decoration: none;
   }
-  @media screen and (max-width: $breakpoint-width and 1010px) {
+  @media screen and (max-width: $breakpoint-width ) and (max-width:1010px) {
     @include change-direction-to-column;
     padding: 50px 18px;
   }
@@ -25,7 +25,7 @@
         width: 100%;
       }
     }
-    @media screen and (max-width: $breakpoint-width and 1010px) {
+    @media screen and (max-width: $breakpoint-width ) and (max-width:1010px) {
       margin-bottom: 30px;
       padding: 0;
       width: 100%;
@@ -34,13 +34,13 @@
   .footer-titles {
     color: $white-color;
     margin-bottom: 8px;
-    @media screen and (max-width: $breakpoint-width and 1010px) {
+    @media screen and (max-width: $breakpoint-width ) and (max-width:1000px) {
       margin-bottom: 8px;
     }
   }
   .footer-middle {
     padding: 50px;
-    @media screen and (max-width: $breakpoint-width and 1010px) {
+    @media screen and (max-width: $breakpoint-width ) and (max-width:1000px) {
       padding: 0;
       a{ width:30%;}
     }
@@ -50,14 +50,14 @@
     .footer-middle-menu {
       @include change-direction-to-column;
       margin-bottom: 30px;
-      @media screen and (max-width: $breakpoint-width and 1010px) {
+      @media screen and (max-width: $breakpoint-width ) and (max-width:1000px) {
         margin: 0 0 10px 0;
       }
     }
   }
   .footer-right {
     padding: 50px;
-    @media screen and (max-width: $breakpoint-width and 1010px) {
+    @media screen and (max-width: $breakpoint-width ) and (max-width:1000px) {
       margin-top: 30px;
       padding: 0;
     }

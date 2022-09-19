@@ -2,7 +2,7 @@
   text-align: center;
   background-color: $black-color;
   padding: 100px 20px;
-  @media screen and (max-width: $breakpoint-width and 800px) {
+  @media screen and (max-width: $breakpoint-width ) and (max-width:800px) {
     margin-top: 55px;
   }
   #full-story-desc {
