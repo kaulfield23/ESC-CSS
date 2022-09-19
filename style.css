@@ -192,7 +192,7 @@ body {
 .headImg {
   display: grid;
   position: relative;
-  background: url("/imgs/image2.png");
+  background: url("./imgs/image2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -209,7 +209,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .headImg {
-    background: url("/imgs/image2small.png");
+    background: url("./imgs/image2small.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

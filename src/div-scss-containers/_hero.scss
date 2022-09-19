@@ -1,11 +1,11 @@
 .headImg {
   display: grid;
   position: relative;
-  background: url("/imgs/image2.png");
+  background: url("./imgs/image2.png");
   @include background-img;
   @include img-style;
   @media screen and (max-width: $breakpoint-width) {
-    background: url("/imgs/image2small.png");
+    background: url("./imgs/image2small.png");
     @include background-img;
     margin-bottom: 180px;
   }
